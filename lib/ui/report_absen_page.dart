@@ -226,7 +226,7 @@ class _ReportPageState extends State<ReportPage> {
     // We create the tooltip on the first use
     tooltip = SuperTooltip(
         popupDirection: TooltipDirection.down,
-        arrowTipDistance: 10.0,
+        arrowTipDistance: 30.0,
         maxHeight: 300,
         borderColor: Colors.white,
         content: new Material(
@@ -567,6 +567,7 @@ class _ReportPageState extends State<ReportPage> {
                   ],
                 ),
                 Container(
+                  width: width,
                   padding: EdgeInsets.only(top: 10, bottom: 15),
                   alignment: Alignment.centerLeft,
                   child: Text(
@@ -578,7 +579,7 @@ class _ReportPageState extends State<ReportPage> {
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.only(left: 15, right: 15),
+                  padding: EdgeInsets.only(left: 15, right: 30),
                   decoration: ShapeDecoration(
                     shape: RoundedRectangleBorder(
                         side: BorderSide(width: 0, style: BorderStyle.solid),
